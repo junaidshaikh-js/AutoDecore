@@ -35,9 +35,12 @@ input {
 }
 
 input:focus,
-button:focus {
-  outline: 1px solid var(--complementary-color) !important;
+button:focus,
+.btn:focus,
+a:focus {
+  outline: 1px solid var(--complementary-color);
   outline-offset: 2px;
+  box-shadow: none !important;
 }
 
 p {
