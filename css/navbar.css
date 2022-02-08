@@ -10,6 +10,10 @@
   text-decoration: none;
 }
 
+.hy-navbar-links .login-btn {
+  display: none;
+}
+
 .hy-search-btn {
   top: 24%;
 }
@@ -27,6 +31,9 @@ footer .fab {
 }
 
 @media screen and (min-width: 769px) {
+  .hy-navbar-links .login-btn {
+    display: inline-block;
+  }
   .hy-search-box {
     top: 28%;
   }
