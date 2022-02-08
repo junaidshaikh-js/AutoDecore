@@ -1,0 +1,44 @@
+.hy-logo {
+  display: inline-block;
+  height: 65px;
+  width: 100px;
+}
+
+.btn.btn-link {
+  background-color: var(--white);
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.hy-navbar-links .login-btn {
+  display: none;
+}
+
+.hy-search-btn {
+  top: 24%;
+}
+
+.btn.btn-link {
+  padding: 0.5rem 1.8rem;
+}
+
+i[title="search"] {
+  font-size: 20px;
+}
+
+footer .fab {
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 769px) {
+  .hy-navbar-links .login-btn {
+    display: inline-block;
+  }
+  .hy-search-box {
+    top: 28%;
+  }
+
+  footer .fab {
+    font-size: 2rem;
+  }
+}
