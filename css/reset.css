@@ -34,6 +34,12 @@ input {
   padding: 0.5rem;
 }
 
+input:focus,
+button:focus {
+  outline: 1px solid var(--complementary-color) !important;
+  outline-offset: 2px;
+}
+
 p {
   margin: 1.5rem 0;
   font-size: 1.1rem;
