@@ -1,0 +1,39 @@
+.login-form-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  min-height: 80vh;
+}
+
+.login {
+  background-color: var(--white);
+  box-shadow: 0 0 7px var(--gray);
+}
+
+.login__message {
+  background-color: var(--primary-color);
+  color: var(--white);
+  flex-basis: 30%;
+}
+
+.login__form {
+  flex-basis: 70%;
+}
+
+.primary-link {
+  color: var(--primary-color);
+}
+
+.login__form [type="checkbox"] {
+  min-height: 0;
+  height: auto;
+}
+
+.complementary-btn {
+  background-color: var(--complementary-color);
+  color: var(--white) !important;
+  font-size: 1.2rem;
+}
+
+.btn.btn-link {
+  padding: 0.7rem 1.8rem;
+}
