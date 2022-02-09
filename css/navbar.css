@@ -4,7 +4,7 @@
   width: 100px;
 }
 
-.btn.btn-link {
+.btn.primary-link {
   background-color: var(--white);
   color: var(--primary-color);
   text-decoration: none;
@@ -18,7 +18,7 @@
   top: 24%;
 }
 
-.btn.btn-link {
+.btn.primary-link {
   padding: 0.5rem 1.8rem;
 }
 

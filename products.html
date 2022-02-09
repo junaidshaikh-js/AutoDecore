@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/jpg" href="./favicon.png" />
+
+    <!-- hydrogen stylesheet -->
+    <link rel="stylesheet" href="https://hydrogen-ui.netlify.app/style.css" />
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <title>All Products | AutoDecore</title>
+  </head>
+  <body>
+    <header>
+      <div class="hy-header-wrapper">
+        <nav class="hy-navbar p-sm">
+          <div class="hy-navbar-links-container mr-1 mb-sm">
+            <div>
+              <button type="button" class="btn hy-hamburger-btn mt-1">
+                <i class="fas fa-bars" title="menu"></i>
+              </button>
+
+              <figure class="hy-logo">
+                <img src="./assets/logo.svg" alt="Brand Logo" />
+              </figure>
+            </div>
+
+            <div>
+              <ul class="hy-navbar-links">
+                <li class="mr-1">
+                  <a class="btn primary-link login-btn" href="./login.html"
+                    >Login</a
+                  >
+                </li>
+                <li class="mr-1">
+                  <a href="#">
+                    <i
+                      class="far fa-heart"
+                      title="Wishlist"
+                      aria-hidden="true"
+                    ></i>
+                    <span class="visually-hidden">Wishlist</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    <i class="fas fa-shopping-cart" title="Shopping Cart"></i>
+                    <span class="visually-hidden"> Shopping Cart </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="hy-search-box">
+            <input
+              type="search"
+              placeholder="Search for producs, brands and more.."
+            />
+
+            <button class="btn hy-search-btn" type="submit">
+              <i class="fas fa-search" title="search"></i>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="flex">
+      <aside class="filter-section mt-1 p-1 ml-1">
+        <header class="flex justify-between">
+          <h5>Filters</h5>
+          <button class="btn btn-link">Clear</button>
+        </header>
+
+        <section>
+          <h6>Price</h6>
+          <input
+            type="range"
+            class="w-100"
+            min="100"
+            max="1000"
+            step="100"
+            list="tickmarks"
+          />
+
+          <datalist id="tickmarks">
+            <option value="100" label="100"></option>
+            <option value="200" label="200"></option>
+            <option value="300" label="300"></option>
+            <option value="400" label="400"></option>
+            <option value="500" label="500"></option>
+            <option value="600" label="600"></option>
+            <option value="700" label="700"></option>
+            <option value="800" label="800"></option>
+            <option value="900" label="900"></option>
+            <option value="1000" label="1000"></option>
+          </datalist>
+        </section>
+
+        <section>
+          <h6>Categories</h6>
+
+          <ul class="pl-1">
+            <li class="py-sm">
+              <a href="#">Vehicle Mats</a>
+            </li>
+            <li class="py-sm">
+              <a href="#">Tyre and wheel</a>
+            </li>
+            <li class="py-sm">
+              <a href="#">Vehicle Cleaners </a>
+            </li>
+            <li class="py-sm">
+              <a href="#">Vehicle Lights</a>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h6>Customer Ratings</h6>
+
+          <ul class="pl-1">
+            <li>
+              <label class="flex align-center">
+                <input
+                  type="radio"
+                  name="customer-rating"
+                  value="four and above"
+                  class="mr-1"
+                />
+
+                4 <i class="fas fa-star px-sm"></i> & above
+              </label>
+            </li>
+
+            <li>
+              <label class="flex align-center">
+                <input
+                  type="radio"
+                  name="customer-rating"
+                  value="three and above"
+                  class="mr-1"
+                />
+
+                3 <i class="fas fa-star px-sm"></i> & above
+              </label>
+            </li>
+
+            <li>
+              <label class="flex align-center">
+                <input
+                  type="radio"
+                  name="customer-rating"
+                  value="two and above"
+                  class="mr-1"
+                />
+
+                2 <i class="fas fa-star px-sm"></i> & above
+              </label>
+            </li>
+
+            <li>
+              <label class="flex align-center">
+                <input
+                  type="radio"
+                  name="customer-rating"
+                  value="one and above"
+                  class="mr-1"
+                />
+
+                1 <i class="fas fa-star px-sm"></i> & above
+              </label>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h6>Sort</h6>
+
+          <ul class="pl-1">
+            <li>
+              <label class="flex align-center">
+                <input
+                  type="radio"
+                  name="sort"
+                  value="low to high"
+                  class="mr-1"
+                />
+
+                Price Low to High
+              </label>
+            </li>
+
+            <li>
+              <label class="flex align-center">
+                <input
+                  type="radio"
+                  name="sort"
+                  value="high to low"
+                  class="mr-1"
+                />
+
+                Price High to Low
+              </label>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h6>Availability</h6>
+          <label class="flex align-center pl-1">
+            <input type="checkbox" class="mr-1" />
+            Out of stock
+          </label>
+        </section>
+      </aside>
+
+      <section class="products-section p-1 my-1 mx-1 flex-grow">
+        <p class="h5">Showing all products (10 products)</p>
+
+        <div class="product-container grid">
+          <article class="card card-vertical p-1 border-m product-card">
+            <div class="card-image">
+              <img
+                class="img-responsive"
+                src="./assets/car-pocket.jpeg"
+                alt="product image"
+              />
+            </div>
+            <div class="card-body ml-1">
+              <h5 class="card-title">Devouge Car Multi Pocket (10 L)</h5>
+              <small class="txt-secondary"> Pick4U Alnafea</small>
+              <div class="product-rating my-1 p-sm">
+                3.7 <i class="fas fa-star"></i>
+              </div>
+              <p class="txt-rg">
+                Multiple storage compartments including pockets to keep items in
+                view.
+              </p>
+
+              <div class="price-container mb-1">
+                <span class="txt-md pr-1 txt-bold">₹680</span>
+                <span class="txt-strike-through txt-secondary mr-1">₹999</span>
+                <span class="discount-percent p-rg">31% off</span>
+              </div>
+
+              <div class="card-btn-container">
+                <button class="btn complementary-btn w-100">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span>Add to Cart</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card card-vertical p-1 border-m product-card">
+            <div class="card-image">
+              <img
+                class="img-responsive"
+                src="./assets/car-pocket.jpeg"
+                alt="product image"
+              />
+            </div>
+            <div class="card-body ml-1">
+              <h5 class="card-title">Devouge Car Multi Pocket (10 L)</h5>
+              <small class="txt-secondary"> Pick4U Alnafea</small>
+              <div class="product-rating my-1 p-sm">
+                3.7 <i class="fas fa-star"></i>
+              </div>
+              <p class="txt-rg">
+                Multiple storage compartments including pockets to keep items in
+                view.
+              </p>
+
+              <div class="price-container mb-1">
+                <span class="txt-md pr-1 txt-bold">₹680</span>
+                <span class="txt-strike-through txt-secondary mr-1">₹999</span>
+                <span class="discount-percent p-rg">31% off</span>
+              </div>
+
+              <div class="card-btn-container">
+                <button class="btn complementary-btn w-100">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span>Add to Cart</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card card-vertical p-1 border-m product-card">
+            <div class="card-image">
+              <img
+                class="img-responsive"
+                src="./assets/car-pocket.jpeg"
+                alt="product image"
+              />
+            </div>
+            <div class="card-body ml-1">
+              <h5 class="card-title">Devouge Car Multi Pocket (10 L)</h5>
+              <small class="txt-secondary"> Pick4U Alnafea</small>
+              <div class="product-rating my-1 p-sm">
+                3.7 <i class="fas fa-star"></i>
+              </div>
+              <p class="txt-rg">
+                Multiple storage compartments including pockets to keep items in
+                view.
+              </p>
+
+              <div class="price-container mb-1">
+                <span class="txt-md pr-1 txt-bold">₹680</span>
+                <span class="txt-strike-through txt-secondary mr-1">₹999</span>
+                <span class="discount-percent p-rg">31% off</span>
+              </div>
+
+              <div class="card-btn-container">
+                <button class="btn complementary-btn w-100">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span>Add to Cart</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card card-vertical p-1 border-m product-card">
+            <div class="card-image">
+              <img
+                class="img-responsive"
+                src="./assets/car-pocket.jpeg"
+                alt="product image"
+              />
+            </div>
+            <div class="card-body ml-1">
+              <h5 class="card-title">Devouge Car Multi Pocket (10 L)</h5>
+              <small class="txt-secondary"> Pick4U Alnafea</small>
+              <div class="product-rating my-1 p-sm">
+                3.7 <i class="fas fa-star"></i>
+              </div>
+              <p class="txt-rg">
+                Multiple storage compartments including pockets to keep items in
+                view.
+              </p>
+
+              <div class="price-container mb-1">
+                <span class="txt-md pr-1 txt-bold">₹680</span>
+                <span class="txt-strike-through txt-secondary mr-1">₹999</span>
+                <span class="discount-percent p-rg">31% off</span>
+              </div>
+
+              <div class="card-btn-container">
+                <button class="btn complementary-btn w-100">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span>Add to Cart</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card card-vertical p-1 border-m product-card">
+            <div class="card-image">
+              <img
+                class="img-responsive"
+                src="./assets/car-pocket.jpeg"
+                alt="product image"
+              />
+            </div>
+            <div class="card-body ml-1">
+              <h5 class="card-title">Devouge Car Multi Pocket (10 L)</h5>
+              <small class="txt-secondary"> Pick4U Alnafea</small>
+              <div class="product-rating my-1 p-sm">
+                3.7 <i class="fas fa-star"></i>
+              </div>
+              <p class="txt-rg">
+                Multiple storage compartments including pockets to keep items in
+                view.
+              </p>
+
+              <div class="price-container mb-1">
+                <span class="txt-md pr-1 txt-bold">₹680</span>
+                <span class="txt-strike-through txt-secondary mr-1">₹999</span>
+                <span class="discount-percent p-rg">31% off</span>
+              </div>
+
+              <div class="card-btn-container">
+                <button class="btn complementary-btn w-100">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span>Add to Cart</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card card-vertical p-1 border-m product-card">
+            <div class="card-image">
+              <img
+                class="img-responsive"
+                src="./assets/car-pocket.jpeg"
+                alt="product image"
+              />
+            </div>
+            <div class="card-body ml-1">
+              <h5 class="card-title">Devouge Car Multi Pocket (10 L)</h5>
+              <small class="txt-secondary"> Pick4U Alnafea</small>
+              <div class="product-rating my-1 p-sm">
+                3.7 <i class="fas fa-star"></i>
+              </div>
+              <p class="txt-rg">
+                Multiple storage compartments including pockets to keep items in
+                view.
+              </p>
+
+              <div class="price-container mb-1">
+                <span class="txt-md pr-1 txt-bold">₹680</span>
+                <span class="txt-strike-through txt-secondary mr-1">₹999</span>
+                <span class="discount-percent p-rg">31% off</span>
+              </div>
+
+              <div class="card-btn-container">
+                <button class="btn complementary-btn w-100">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span>Add to Cart</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card card-vertical p-1 border-m product-card">
+            <div class="card-image">
+              <img
+                class="img-responsive"
+                src="./assets/car-pocket.jpeg"
+                alt="product image"
+              />
+            </div>
+            <div class="card-body ml-1">
+              <h5 class="card-title">Devouge Car Multi Pocket (10 L)</h5>
+              <small class="txt-secondary"> Pick4U Alnafea</small>
+              <div class="product-rating my-1 p-sm">
+                3.7 <i class="fas fa-star"></i>
+              </div>
+              <p class="txt-rg">
+                Multiple storage compartments including pockets to keep items in
+                view.
+              </p>
+
+              <div class="price-container mb-1">
+                <span class="txt-md pr-1 txt-bold">₹680</span>
+                <span class="txt-strike-through txt-secondary mr-1">₹999</span>
+                <span class="discount-percent p-rg">31% off</span>
+              </div>
+
+              <div class="card-btn-container">
+                <button class="btn complementary-btn w-100">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span>Add to Cart</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card card-vertical p-1 border-m product-card">
+            <div class="card-image">
+              <img
+                class="img-responsive"
+                src="./assets/car-pocket.jpeg"
+                alt="product image"
+              />
+            </div>
+            <div class="card-body ml-1">
+              <h5 class="card-title">Devouge Car Multi Pocket (10 L)</h5>
+              <small class="txt-secondary"> Pick4U Alnafea</small>
+              <div class="product-rating my-1 p-sm">
+                3.7 <i class="fas fa-star"></i>
+              </div>
+              <p class="txt-rg">
+                Multiple storage compartments including pockets to keep items in
+                view.
+              </p>
+
+              <div class="price-container mb-1">
+                <span class="txt-md pr-1 txt-bold">₹680</span>
+                <span class="txt-strike-through txt-secondary mr-1">₹999</span>
+                <span class="discount-percent p-rg">31% off</span>
+              </div>
+
+              <div class="card-btn-container">
+                <button class="btn complementary-btn w-100">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span>Add to Cart</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card card-vertical p-1 border-m product-card">
+            <div class="card-image">
+              <img
+                class="img-responsive"
+                src="./assets/car-pocket.jpeg"
+                alt="product image"
+              />
+            </div>
+            <div class="card-body ml-1">
+              <h5 class="card-title">Devouge Car Multi Pocket (10 L)</h5>
+              <small class="txt-secondary"> Pick4U Alnafea</small>
+              <div class="product-rating my-1 p-sm">
+                3.7 <i class="fas fa-star"></i>
+              </div>
+              <p class="txt-rg">
+                Multiple storage compartments including pockets to keep items in
+                view.
+              </p>
+
+              <div class="price-container mb-1">
+                <span class="txt-md pr-1 txt-bold">₹680</span>
+                <span class="txt-strike-through txt-secondary mr-1">₹999</span>
+                <span class="discount-percent p-rg">31% off</span>
+              </div>
+
+              <div class="card-btn-container">
+                <button class="btn complementary-btn w-100">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span>Add to Cart</span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <div class="bg-black txt-white txt-center">
+      <footer class="py-2">
+        <p>Made with ❤️ by Junaid</p>
+        <div class="social-links">
+          <a href="https://twitter.com/junaidshaikh_js" class="mr-sm"
+            ><i class="fab fa-twitter-square" title="Twitter"></i
+          ></a>
+          <a href="https://github.com/junaidshaikh-js" class="mr-sm"
+            ><i class="fab fa-github-square" title="Github"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/junaidshaikhjs/"
+            ><i class="fab fa-linkedin" title="LinkedIn"></i
+          ></a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
