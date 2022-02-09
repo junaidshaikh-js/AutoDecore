@@ -27,3 +27,7 @@
 .bg-black {
   background-color: var(--black-background);
 }
+
+.bg-white {
+  background-color: var(--white);
+}
