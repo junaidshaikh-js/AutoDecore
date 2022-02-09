@@ -36,3 +36,8 @@
 .w-100 {
   width: 100%;
 }
+
+/* border */
+.border-bottom {
+  border-bottom: 1px solid var(--gray);
+}
