@@ -13,7 +13,7 @@
     <!-- stylesheet -->
     <link rel="stylesheet" href="./css/index.css" />
 
-    <title>AutoDecore | LogIn</title>
+    <title>AutoDecore | Singup</title>
   </head>
   <body>
     <header>
@@ -26,14 +26,15 @@
               </button>
 
               <figure class="hy-logo">
-                <img src="./assets/logo.svg" alt="Brand Logo" />
+                <a href="./index.html">
+                <img src="./assets/logo.svg" alt="Brand Logo" /></a>
               </figure>
             </div>
 
             <div>
               <ul class="hy-navbar-links">
                 <li class="mr-1">
-                  <a class="btn btn-link login-btn" href="./signup.html">Signup</a>
+                  <a class="btn btn-link login-btn" href="./login.html">Login</a>
                 </li>
                 <li class="mr-1">
                   <a href="#">
@@ -71,13 +72,13 @@
 
     <div class="main-wrapper">
       <main>
-        <div class="login-form-wrapper flex flex-center">
-          <article class="login flex flex-column mx-1">
-            <div class="login__message p-1 flex-grow">
-              <h2>Login</h2>
-              <p>Get access to your orders, Wishlist and Recommendations</p>
+        <div class="signup-form-wrapper flex flex-center">
+          <article class="signup flex flex-column mx-1 w-100 ">
+            <div class="signup__message p-1 flex-grow">
+              <h2>Looks like you are new here!</h2>
+              <p>Sign up with your email address to get started.</p>
             </div>
-            <div class="login__form mt-1 p-1 flex-grow">
+            <div class="signup__form mt-1 p-1 flex-grow">
               <form>
                 <div>
                   <label for="input" class="form-label txt-md field-required">
@@ -111,23 +112,24 @@
                 <div class="flex justify-between align-center mt-2">
                   <span>
                     <input class="mr-sm" type="checkbox" id="remember-me" />
-                    <label for="remember-me"> Remember me</label>
+                    <label for="remember-me"
+                      >I accept all the terms and conditions</label
+                    >
                   </span>
-
-                  <a href="#" class="primary-link">Forgot Password?</a>
                 </div>
 
                 <button
-                  class="btn login-submit mt-1 complementary-btn w-100"
+                  class="btn signup-submit mt-1 complementary-btn w-100"
                   type="submit"
                 >
-                  Login
+                  Create New Account
                 </button>
               </form>
 
-              <div class="txt-center mt-1 primary-link">
-                <a href="./signup.html"
-                  >Create new account <i class="fas fa-chevron-circle-right"></i
+              <div class="txt-center my-1 primary-link">
+                <a href="./login.html"
+                  >Alredy have an account
+                  <i class="fas fa-chevron-circle-right"></i
                 ></a>
               </div>
             </div>
