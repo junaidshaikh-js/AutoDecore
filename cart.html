@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/jpg" href="./favicon.png" />
+
+    <!-- hydrogen stylesheet -->
+    <link rel="stylesheet" href="https://hydrogen-ui.netlify.app/style.css" />
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <title>AutoDecore | Cart</title>
+  </head>
+  <body>
+    <header>
+      <div class="hy-header-wrapper">
+        <nav class="hy-navbar p-sm">
+          <div class="hy-navbar-links-container mr-1 mb-sm">
+            <div>
+              <button type="button" class="btn hy-hamburger-btn mt-1">
+                <i class="fas fa-bars" title="menu"></i>
+              </button>
+
+              <figure class="hy-logo">
+                <a href="./index.html">
+                  <img src="./assets/logo.svg" alt="Brand Logo" />
+                </a>
+              </figure>
+            </div>
+
+            <div>
+              <ul class="hy-navbar-links">
+                <li class="mr-1">
+                  <a class="btn primary-link login-btn" href="./login.html"
+                    >Login</a
+                  >
+                </li>
+                <li class="mr-1">
+                  <a href="#">
+                    <i
+                      class="far fa-heart"
+                      title="Wishlist"
+                      aria-hidden="true"
+                    ></i>
+                    <span class="visually-hidden">Wishlist</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    <i class="fas fa-shopping-cart" title="Shopping Cart"></i>
+                    <span class="visually-hidden"> Shopping Cart </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="hy-search-box">
+            <input
+              type="search"
+              placeholder="Search for producs, brands and more.."
+            />
+
+            <button class="btn hy-search-btn" type="submit">
+              <i class="fas fa-search" title="search"></i>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="cart-main mt-1">
+      <div class="cart-container flex">
+        <section class="cart-details mx-1 p-1 bg-white">
+          <p class="h4 border-bottom pb-sm">
+            My Cart <span class="cart-count">(1)</span>
+          </p>
+
+          <div
+            class="py-1 border-bottom-dotted flex align-center justify-between"
+          >
+            <div>
+              <span
+                >Deliver to:
+                <span class="txt-semibold">Junaid Shaikh</span></span
+              >
+
+              <address class="mt-1">
+                #916 Water St, Ketchikan, Alaska 99901, USA
+              </address>
+            </div>
+
+            <div class="ml-2">
+              <button class="btn complementary-ouline-btn">Change</button>
+            </div>
+          </div>
+
+          <article>
+            <a href="#" class="card card-horizontal p-1 border-m product-card">
+              <div class="card-image mr-2">
+                <img
+                  class="img-responsive"
+                  src="./assets/car-pocket.jpeg"
+                  alt="product image"
+                />
+              </div>
+              <div class="card-body ml-1">
+                <h5 class="card-title">Devouge Car Multi Pocket (10 L)</h5>
+                <small class="txt-secondary"> Pick4U Alnafea</small>
+                <div class="product-rating my-1 p-sm">
+                  3.7 <i class="fas fa-star"></i>
+                </div>
+
+                <div class="price-container mb-1">
+                  <span class="txt-md pr-1 txt-bold">₹680</span>
+                  <span class="txt-strike-through txt-secondary mr-1"
+                    >₹999</span
+                  >
+                  <span class="discount-percent p-rg">31% off</span>
+                </div>
+              </div>
+            </a>
+
+            <section class="cart-product-actions flex align-center mb-2 wrap">
+              <div class="product-count flex">
+                <button class="btn decrease-product-quantity">
+                  <i class="fas fa-minus" title="decrease"></i>
+                </button>
+
+                <input
+                  type="text"
+                  class="product-quantity-count txt-center"
+                  value="1"
+                />
+
+                <button class="btn increase-product-quantity">
+                  <i class="fas fa-plus" title="increase"></i>
+                </button>
+              </div>
+
+              <button class="btn btn-link">Save for later</button>
+              <button class="btn btn-link">Remove</button>
+            </section>
+          </article>
+
+          <article>
+            <a href="#" class="card card-horizontal p-1 border-m product-card">
+              <div class="card-image mr-2">
+                <img
+                  class="img-responsive"
+                  src="./assets/car-pocket.jpeg"
+                  alt="product image"
+                />
+              </div>
+              <div class="card-body ml-1">
+                <h5 class="card-title">Devouge Car Multi Pocket (10 L)</h5>
+                <small class="txt-secondary"> Pick4U Alnafea</small>
+                <div class="product-rating my-1 p-sm">
+                  3.7 <i class="fas fa-star"></i>
+                </div>
+
+                <div class="price-container mb-1">
+                  <span class="txt-md pr-1 txt-bold">₹680</span>
+                  <span class="txt-strike-through txt-secondary mr-1"
+                    >₹999</span
+                  >
+                  <span class="discount-percent p-rg">31% off</span>
+                </div>
+              </div>
+            </a>
+
+            <section class="cart-product-actions flex align-center mb-2 wrap">
+              <div class="product-count flex">
+                <button class="btn decrease-product-quantity">
+                  <i class="fas fa-minus" title="decrease"></i>
+                </button>
+
+                <input
+                  type="text"
+                  class="product-quantity-count txt-center"
+                  value="1"
+                />
+
+                <button class="btn increase-product-quantity">
+                  <i class="fas fa-plus" title="increase"></i>
+                </button>
+              </div>
+
+              <button class="btn btn-link">Save for later</button>
+              <button class="btn btn-link">Remove</button>
+            </section>
+          </article>
+
+          <div class="cart-action-btn">
+            <button class="btn complementary-btn">Place Order</button>
+          </div>
+        </section>
+
+        <section class="price-details mx-1 bg-white p-1">
+          <header>
+            <p class="h4 bg-white border-bottom pb-sm txt-secondary">
+              Price Details
+            </p>
+          </header>
+
+          <div class="border-bottom-dotted">
+            <div class="flex justify-between my-sm">
+              <span>Price <span>(2)</span></span>
+
+              <span>₹699</span>
+            </div>
+
+            <div class="flex justify-between txt-rg">
+              <span>Discount</span>
+
+              <span class="txt-green">₹234</span>
+            </div>
+
+            <div class="flex justify-between txt-rg">
+              <span>Delivery Charges</span>
+
+              <span>₹50</span>
+            </div>
+          </div>
+
+          <div class="border-bottom-dotted">
+            <div class="flex justify-between txt-bold my-1">
+              <span>Total Amount</span>
+
+              <span>₹2000</span>
+            </div>
+          </div>
+
+          <div class="my-1">
+            <span class="txt-green txt-semibold"
+              >You will save ₹2000 on this order</span
+            >
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <div class="bg-black txt-white txt-center">
+      <footer class="py-2">
+        <p>Made with ❤️ by Junaid</p>
+        <div class="social-links">
+          <a href="https://twitter.com/junaidshaikh_js" class="mr-sm"
+            ><i class="fab fa-twitter-square" title="Twitter"></i
+          ></a>
+          <a href="https://github.com/junaidshaikh-js" class="mr-sm"
+            ><i class="fab fa-github-square" title="Github"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/junaidshaikhjs/"
+            ><i class="fab fa-linkedin" title="LinkedIn"></i
+          ></a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
