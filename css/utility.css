@@ -41,3 +41,12 @@
 .border-bottom {
   border-bottom: 1px solid var(--gray);
 }
+
+.border-bottom-dotted {
+  border-bottom: 1px dotted var(--gray);
+}
+
+/* txt color */
+.txt-green {
+  color: var(--green);
+}
