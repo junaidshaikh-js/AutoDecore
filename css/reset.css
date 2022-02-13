@@ -10,8 +10,13 @@ html {
   padding: 0;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   background-color: var(--white-background);
+  overflow-x: hidden;
 }
 
 img {
