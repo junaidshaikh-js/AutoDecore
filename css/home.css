@@ -67,6 +67,17 @@
   height: 200px;
 }
 
+/* swiper */
+
+.swiper {
+  width: 100vw;
+  height: auto;
+}
+
+.swiper img {
+  width: 100%;
+}
+
 @media screen and (min-width: 769px) {
   .trending-product-container {
     flex-direction: row;
