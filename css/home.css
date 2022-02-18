@@ -67,6 +67,41 @@
   height: 200px;
 }
 
+/* carousel */
+.swiper {
+  position: relative;
+  width: 100vw;
+}
+
+.swiper-wrapper {
+  display: flex;
+  transition: all 0.3s linear;
+}
+
+.swiper-slide {
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.swiper-slide img {
+  width: 100%;
+}
+
+/* carouse buttons */
+.swiper-button-prev,
+.swiper-button-next {
+  cursor: pointer;
+  font-size: 3rem;
+  color: var(--primary-color);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.swiper-button-next {
+  right: 0;
+}
+
 @media screen and (min-width: 769px) {
   .trending-product-container {
     flex-direction: row;
@@ -85,6 +120,11 @@
   .offer-zone-container img {
     width: 100%;
     height: 100%;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    font-size: 4rem;
   }
 }
 
