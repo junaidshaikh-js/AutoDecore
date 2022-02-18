@@ -5,14 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- swiper JS -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-    />
-
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-
     <!-- favicon -->
     <link rel="shortcut icon" type="image/jpg" href="./favicon.png" />
 
@@ -84,33 +76,34 @@
 
     <main>
       <section>
-        <!-- Slider main container -->
         <div class="swiper my-1">
-          <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
+            <div class="swiper-slide current-slide">
+              <a href="./products.html">
+                <img src="./assets/car-foot-mats.webp" alt="Shop Now" />
+              </a>
+            </div>
+
             <div class="swiper-slide">
               <a href="./products.html">
                 <img src="./assets/car-foot-mats.webp" alt="Shop Now " />
               </a>
             </div>
+
             <div class="swiper-slide">
               <a href="./products.html">
                 <img src="./assets/car-foot-mats.webp" alt="Shop Now " />
               </a>
             </div>
-            <div class="swiper-slide">
-              <a href="./products.html">
-                <img src="./assets/car-foot-mats.webp" alt="Shop Now " />
-              </a>
-            </div>
-            ...
           </div>
 
-          <div class="swiper-pagination"></div>
-
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev">
+            <i class="fas fa-angle-left" title="pre-slide"></i>
+          </div>
+          <div class="swiper-button-next">
+            <i class="fas fa-angle-right" title="next-slide"></i>
+          </div>
         </div>
       </section>
 
