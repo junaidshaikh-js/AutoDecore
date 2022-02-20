@@ -11,3 +11,7 @@
 - [Wishlist Management](https://autodecore.netlify.app/wishlist.html)
 - [Signup Page](https://autodecore.netlify.app/signup.html)
 - [Login Page](https://autodecore.netlify.app/login.html)
+
+## Preview
+
+![preview](./preview.gif)
