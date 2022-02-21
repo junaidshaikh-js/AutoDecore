@@ -43,6 +43,21 @@
   padding: 0.7rem 1.8rem;
 }
 
+.input-icon {
+  position: relative;
+}
+
+.input-icon input {
+  padding-right: 4rem;
+}
+
+.show-password-icon-container {
+  cursor: pointer;
+  position: absolute;
+  top: 7px;
+  right: 15px;
+}
+
 @media screen and (min-width: 589px) {
   .login,
   .signup {
