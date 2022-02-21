@@ -29,6 +29,20 @@
   height: fit-content;
 }
 
+.card-icon {
+  position: relative;
+}
+
+.btn-wishlist {
+  position: absolute;
+  top: 1%;
+  right: 2%;
+}
+
+.btn.btn-wishlist i {
+  color: var(--red);
+}
+
 @media screen and (max-width: 769px) {
   main {
     flex-direction: column;
