@@ -1,6 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto&display=swap");
+
 :root {
   --primary-color: hsl(217, 87%, 55%);
   --complementary-color: hsl(20, 97%, 55%);
+
+  --primary-font-family: "Montserrat", sans-serif;
+  --secondary-font-family: "Roboto", sans-serif;
 
   --white-background: hsl(216, 22%, 95%);
   --black-background: hsl(218, 41%, 15%);
