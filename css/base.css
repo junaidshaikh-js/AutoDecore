@@ -24,6 +24,10 @@
   background-color: var(--primary-color);
 }
 
+.bg-complimentary {
+  background-color: var(--complementary-color);
+}
+
 .bg-black {
   background-color: var(--black-background);
 }
