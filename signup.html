@@ -82,11 +82,37 @@
             <div class="signup__form mt-1 p-1 flex-grow">
               <form>
                 <div>
+                  <label for="first-name" class="form-label txt-md field-required">
+                    First Name
+                  </label>
+                  <input
+                    type="text"
+                    class="form-field my-sm p-sm border-sm w-100"
+                    placeholder="John"
+                    id="first-name"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="last-name" class="form-label txt-md field-required">
+                    Last Name
+                  </label>
+                  <input
+                    type="text"
+                    class="form-field my-sm p-sm border-sm w-100"
+                    placeholder="Doe"
+                    id="last-name"
+                    required
+                  />
+                </div>
+
+                <div>
                   <label for="input" class="form-label txt-md field-required">
                     Email Address
                   </label>
                   <input
-                    type="text"
+                    type="email"
                     class="form-field my-sm p-sm border-sm w-100"
                     placeholder="johndoe@example.com"
                     id="input"
@@ -101,13 +127,43 @@
                   >
                     Password
                   </label>
-                  <input
+
+                  <div class="input-icon">
+                    <input
                     type="password"
                     class="form-field my-sm p-sm border-sm w-100"
                     placeholder="*********"
                     id="password"
                     required
-                  />
+                    />
+
+                    <span class="show-password-icon-container">
+                      <i class="fas fa-eye-slash"></i>
+                    </span>
+                  </div>
+                </div>
+
+                <div>
+                  <label
+                    for="confirm-password"
+                    class="form-label txt-md field-required"
+                  >
+                    Confirm Password
+                  </label>
+
+                  <div class="input-icon">
+                    <input
+                    type="password"
+                    class="form-field my-sm p-sm border-sm w-100"
+                    placeholder="*********"
+                    id="confirm-password"
+                    required
+                    />
+                    
+                    <span class="show-password-icon-container">
+                      <i class="fas fa-eye-slash"></i>
+                    </span>
+                  </div>
                 </div>
 
                 <div class="flex justify-between align-center mt-2">
